@@ -1,0 +1,39 @@
+::before,
+::after,
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+:root {
+  --primary-color: purple;
+  --secondary-color: yellowgreen;
+  --spacing-s: 1px;
+  --spacing-m: 20px;
+}
+
+main {
+  height: 100vh;
+}
+
+.panel-window-container {
+  display: flex;
+  background-color: var(--primary-color);
+  height: 100%;
+}
+
+.panel {
+  border: var(--spacing) solid red;
+  flex-grow: 1;
+  background-color: var(--secondary-color);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  margin: 0px var(--spacing-m);
+}
+
+.panel:hover {
+  flex-grow: 2;
+  background-color: black;
+}
