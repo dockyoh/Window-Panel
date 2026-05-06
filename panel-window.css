@@ -44,6 +44,10 @@ main {
   color: white;
 }
 
+.open-panel {
+  flex-grow: 2;
+}
+
 .panel::before {
   content: "";
   width: 100%;
@@ -94,7 +98,7 @@ main {
   background-image: url("./images/tree.jpg");
 }
 
-.panel:hover {
+/* .panel:hover {
   flex-grow: 2;
 }
 
@@ -104,4 +108,4 @@ main {
 
 .panel:hover::before {
   background-color: rgba(0, 0, 0, 0.4);
-}
+} */
