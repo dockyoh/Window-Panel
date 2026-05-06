@@ -4,10 +4,10 @@ let prevPanel;
 panelElement.forEach((panel) => {
   panel.addEventListener("click", (event) => {
     if (prevPanel) {
-      prevPanel.classList.toggle("open-panel");
+      prevPanel.classList.remove("open-panel");
     }
     const currentPannel = event.target.closest(".panel");
     prevPanel = currentPannel;
-    currentPannel.classList.toggle("open-panel");
+    currentPannel.classList.add("open-panel");
   });
 });
