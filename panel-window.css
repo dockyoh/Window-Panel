@@ -12,6 +12,7 @@
   --secondary-color: yellowgreen;
   --spacing-s: 5px;
   --spacing-m: 20px;
+  --bg-color: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -54,6 +55,7 @@ main {
   height: 100%;
   position: absolute;
   transition: all 0.5s ease-in-out;
+  background-color: var(--bg-color);
 }
 
 .panel h1 {
@@ -78,8 +80,8 @@ main {
   margin-bottom: var(--spacing-m);
 }
 
-.panel h1 span {
-  transition: all 0.4s ease-in-out;
+.panel * {
+  transition: all 0.5s ease-in-out;
 }
 
 .panel1 {
